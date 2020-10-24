@@ -103,13 +103,15 @@
 //#define ANYCUBIC_4_MAX_PRO_ENDSTOPS
 
 #if ENABLED(ANYCUBIC_4_MAX_PRO_ENDSTOPS)
-  #define X_MAX_PIN                           43
-  #define Y_STOP_PIN                          19
+  #define X_MAX_PIN                            2
+  #define Y_STOP_PIN                          43
 #elif EITHER(ANYCUBIC_LCD_CHIRON, ANYCUBIC_LCD_I3MEGA)
-  #define Y_STOP_PIN                          42
-  #define Z2_MIN_PIN                          43
+  #define X_MAX_PIN                            2
+  #define X_STOP_PIN                           3
+  #define Y_STOP_PIN                          43
+  #define Z_STOP_PIN                          18
   #ifndef Z_MIN_PROBE_PIN
-    #define Z_MIN_PROBE_PIN                    2
+    #define Z_MIN_PROBE_PIN                   42
   #endif
   #ifndef FIL_RUNOUT_PIN
     #if ENABLED(ANYCUBIC_LCD_CHIRON)

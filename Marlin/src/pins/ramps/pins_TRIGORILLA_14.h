@@ -108,10 +108,10 @@
 #elif EITHER(ANYCUBIC_LCD_CHIRON, ANYCUBIC_LCD_I3MEGA)
   #define X_MAX_PIN                            2
   #define X_STOP_PIN                           3
-  #define Y_STOP_PIN                          43
+  #define Y_STOP_PIN                          42
   #define Z_STOP_PIN                          18
   #ifndef Z_MIN_PROBE_PIN
-    #define Z_MIN_PROBE_PIN                   42
+    #define Z_MIN_PROBE_PIN                   43
   #endif
   #ifndef FIL_RUNOUT_PIN
     #if ENABLED(ANYCUBIC_LCD_CHIRON)
